@@ -1,0 +1,34 @@
+body{
+    background: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+#logo{
+    background: #235E3D;
+}
+
+#menu ul li:hover{
+    background: #235E3D;
+}
+
+.active {
+    background-color: #235E3D;
+}
+
+.button-more{
+    background: #235E3D;
+}
+
+#sidebar #logout{
+    background: #235E3D;
+}
+
+#to-red,
+#to-blue{
+    filter: brightness(0.6);
+}
+
+.ui-accordion .ui-accordion-header-active {
+    border: 1px solid #215136;
+    background: #235E3D;
+    font-size: 18px;
+}

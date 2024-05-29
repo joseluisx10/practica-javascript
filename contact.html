@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" id="theme" href="">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Plugin validacion -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!--Moment-->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+    <!--Mis Scripts-->
+    <script type="text/javascript" src="js/contact.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+                PROYECTO JS
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li title="index"><a href="index.html">Inicio</a></li>
+                    <li title="reloj"><a href="reloj.html">Reloj</a></li>
+                    <li title="about"><a href="about.html">Sobre mi</a></li>
+                    <li title="contact"><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <div id="box">
+                <!-- Cargar formulario -->
+                <h2>Contacto</h2>
+                <br>
+                <span class="form-text">(*) Obligatorio</span>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre (*)</label>
+                    <input type="text" name="name" data-validation="alphanumeric" />
+
+                    <label for="surname">Apellidos (*)</label>
+                    <input type="text" name="surname" data-validation="alphanumeric" />
+
+                    <label>Email (*)</label>
+                    <input type="email" name="email" data-validation="email" />
+
+                    <label for="sex">Sexo (*)</label>
+                    <select id="option" name="sex" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date">Fecha de nacimiendo (*)</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy" />
+
+                    <label for="years">Edad (*)</label>
+                    <input type="number" name="years" data-validation="number" />
+
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="caracol">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium labore necessitatibus
+                        molestias facilis. Quam est reprehenderit odit cumque minus illum assumenda cupiditate ipsa
+                        pariatur velit, natus, voluptates quae ducimus expedita!</p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="name">
+                            Nombre
+                        </label>
+                        <input id="form_name" type="text" name="name">
+                        <label for="email">
+                            Correo
+                        </label>
+                        <input type="email" name="email">
+                        <label for="password">
+                            Contraseña
+                        </label>
+                        <input type="password" name="password">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+
+    <footer>
+        Practica JS con Udemy Jose Luis Sur &copy;
+        <div class="subir"></div>
+    </footer>
+</body>
+
+</html>

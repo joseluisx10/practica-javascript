@@ -1,0 +1,35 @@
+body{
+    background: url("../img/rojo.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #E63244;
+}
+
+#menu ul li:hover{
+    background: #E63244;
+}
+
+.active {
+    background-color: #E63244;
+}
+
+.button-more{
+    background: #E63244;
+}
+
+#sidebar #logout{
+    background: #E63244;
+}
+
+#to-blue,
+#to-green{
+    filter: brightness(0.6);
+}
+
+.ui-accordion .ui-accordion-header-active {
+    border: 1px solid #E63244;
+    background: #e32236;
+    font-size: 18px;
+}

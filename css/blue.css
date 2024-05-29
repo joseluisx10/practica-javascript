@@ -1,0 +1,35 @@
+body{
+    background: url("../img/cielo.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #00aae4;
+}
+
+#menu ul li:hover{
+    background: #00aae4;
+}
+
+.active {
+    background-color: #00aae4;
+}
+
+.button-more{
+    background: #00aae4;
+}
+
+#sidebar #logout{
+    background: #00aae4;
+}
+
+#to-red,
+#to-green{
+    filter: brightness(0.6);
+}
+
+.ui-accordion .ui-accordion-header-active {
+    border: 1px solid #03bbf8;
+    background: #00aae4;
+    font-size: 18px;
+}
